@@ -1,0 +1,148 @@
+.profile{
+    width: 79vw;
+    height: 260vh;
+    /* border: 1px solid black; */
+    margin-top: 5vh;
+}
+.my-profile{
+    width: 79vw;
+    height: 34vh;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 3px gray;
+    /* border: 1px solid black; */
+}
+.profile-description{
+    width: 50%;
+    height: 34vh;
+    font-size: 1.2vw;
+    color: #5E5873;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+.info{
+    width: 30%;
+    height: 31vh;
+    text-align: center;
+    padding-top: 3vh;
+    /* padding-left: 2vw; */
+    line-height: 0.4;
+    /* border: 1px solid black; */
+}
+.info-pic{
+    margin-top: 2vh;
+}
+.phone{
+    width: 13%;
+    height: 34vh;
+    /* border: 1px solid black; */
+}
+.phone-number{
+    width: 47%;
+    height: 34vh;
+    /* border: 1px solid black; */
+}
+.skills{
+    width: 30vw;
+    height: 34vh;
+    /* border: 1px solid black; */
+}
+.pen{
+    margin-left: 25vw;
+    margin-top: 2vh;
+    width: 5vw;
+    /* border: 1px solid black; */
+}
+.skill-tag button{
+    border-radius: 3px;
+    border: 1px solid #D62196;
+    background-color: transparent;
+    font-size: 0.7vw;
+    color: #D62196;
+    padding: 1vh 1vw;
+    margin-right: 0.5vw;
+}
+.about{
+    width: 79vw;
+    height: 30vh;
+    font-size: 1.2vw;
+    border-radius: 8px;
+    display: grid;
+    box-shadow: 0 0 3px gray;
+    margin-top: 5vh;
+    /* border: 1px solid black; */
+}
+.about-div{
+    width: 95%;
+    margin: auto;
+    color: #5E5873;
+    /* border: 1px solid black; */
+}
+.pen2{
+    margin-left: 73vw;
+    margin-top: 2vh;
+    width: 5vw;
+    /* border: 1px solid black; */
+}
+.experience{
+    width: 79vw;
+    height: 55vh;
+    margin-top: 7vh;
+    font-size: 1.2vw;
+    border-radius: 8px;
+    box-shadow: 0 0 3px gray;
+    /* border: 1px solid black; */
+}
+.project{
+    width: 79vw;
+    height: 55vh;
+    margin-top: 7vh;
+    font-size: 1.1vw;
+    border-radius: 8px;
+    line-height: 0.3;
+    box-shadow: 0 0 3px gray;
+}
+.education{
+    width: 79vw;
+    height: 48vh;
+    margin-top: 7vh;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1vw;
+    border-radius: 8px;
+    line-height: 0.3;
+    border: none;
+    /* box-shadow: 0 0 3px gray; */
+}
+.edu-info{
+    width: 48%;
+    height: 48vh;
+    border-radius: 8px;
+    line-height: 0.5;
+    color: #5E5873;
+    font-size: 1.1vw;
+    box-shadow: 0 0 3px gray;
+    /* border: 1px solid black; */
+}
+.document{
+    width: 48%;
+    height: 48vh;
+    border-radius: 8px;
+    /* line-height: 0.6; */
+    box-shadow: 0 0 3px gray;
+    /* border: 1px solid black; */
+}
+.pen3{
+    margin-left: 33vw;
+    margin-top: 2vh;
+    width: 5vw;
+}
+.about-div2{
+    width: 95%;
+    margin: auto;
+    line-height: 1;
+    color: #5E5873;
+    /* border: 1px solid black; */
+}

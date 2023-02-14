@@ -1,0 +1,38 @@
+.jobs{
+    /* border: 1px solid black; */
+    padding-top: 10vh;
+}
+.my-application{
+    height: 8vh;
+    width: 95vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1vw;
+    /* margin-top: 10vh; */
+    /* border: 1px solid black; */
+}
+.my-application-left{
+    width: 15vw;
+    height: 8vh;
+    /* border: 1px solid black; */
+}
+.logout{
+    width: 6vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    color: #D62196;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+}
+.logout-img{
+    width: 1.5vw;
+}
+.job-body{
+    width: 98vw;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}

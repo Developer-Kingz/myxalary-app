@@ -1,0 +1,39 @@
+<main class="application">
+
+
+    <a href="#" *ngFor="let job of jobs">
+    <div class="app-list">
+       <div class="app-img-div"><img [src]="job.imagePath" alt="" class="app-img"></div>
+        <div class="company">
+            <p>{{job.company}}</p>
+            <h3>{{job.level}}</h3>
+        </div>
+
+        <div class="country">
+            <div class="my-country">
+                <img src="../../../assets/location.svg" alt="" class="location-img">
+                <p>{{job.country}}</p>
+            </div>
+            <div class="salary">
+                {{job.amount}}
+            </div>
+        </div>
+        <div class="tags">
+            <div class="single-tags">Figma</div>
+            <div class="single-tags">Sketch</div>
+            <div class="single-long-tags">Adobe XD</div>
+            <div class="single-long-tags">Illustrator</div>
+            <div class="single-long-tags">Photoshop</div>
+            <div class="single-tags">Invision</div>
+        </div>
+
+        <div class="time">
+            {{job.time}}
+        </div>
+        <!-- <button class="action-btn">Actions <img src="../../../assets/drop-down.png" alt="" class="action-drop-down"> </button> -->
+        
+    </div>
+    </a>
+
+</main>
+

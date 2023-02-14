@@ -1,0 +1,42 @@
+.sidebar{
+    width: 17vw;
+    height: 43.7vh;
+    border-radius: 8px;
+    margin-top: 5vh;
+    box-shadow: 0 0 3px #d6d5da;
+    /* border: 1px solid black; */
+}
+.sidebar-item{
+    width: 17vw;
+    height: 7vh;
+    color: #5E5873;
+    font-size: 1.1vw;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.sidebar-item:hover{
+    /* width: 18vw; */
+    height: 8vh;
+    border: 1px solid rgb(231, 227, 227);
+    border-radius: 7px;
+    color: #D62196;
+    box-shadow: 0 0 3px solid #5E5873;
+}
+a{
+    text-decoration: none;
+}
+.sidebar-img{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.sidebar-logout{
+    width: 1.5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.active{
+    color: #D62196;
+}

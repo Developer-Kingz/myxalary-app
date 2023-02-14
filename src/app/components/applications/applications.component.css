@@ -1,0 +1,107 @@
+.application{
+    width: 79vw;
+    /* height: 135vh; */
+    margin-top: 5vh;
+    /* border: 1px solid black; */
+}
+.app-list{
+    width: 79vw;
+    height: 14vh;
+    border-radius: 8px;
+    background-color: white;
+    margin-bottom: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 8px #d6d5da;
+    /* border: 1px solid black; */
+}
+.app-img-div{
+    width: 3vw;
+    height: 5vh;
+    /* border: 1px solid black; */
+}
+.company{
+    width: 16vw;
+    height: 5vh;
+    font-size: 1vw;
+    line-height: 0.3;
+    padding-bottom: 1.5vh;
+    /* border: 1px solid black; */
+}
+.country{
+    width: 23vw;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+.location-img{
+    width: 1vw;
+}
+.my-country{
+    width: 12vw;
+    height: 4vh;
+    font-size: 1.1vw;
+    background-color: #F7D3EA;
+    color: #D62196;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+}
+.salary{
+    width: 9vw;
+    height: 4vh;
+    background-color: #F7D3EA;
+    color: #D62196;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.tags{
+    width: 15vw;
+    height: 9vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+}
+.time{
+    width: 8vw;
+    height: 2vh;
+    font-size: 1vw;
+    color: #5E5873;
+    /* border: 1px solid black; */
+}
+.single-tags{
+    width: 3vw;
+    height: 3vh;
+    margin-right: 0.5vw;
+    display: grid;
+    color: #D62196;
+    border: 1px solid #D62196;
+    place-content: center;
+    border-radius: 3px;
+    font-size: 1vw;
+    /* border: 1px solid black; */
+}
+.single-long-tags{
+    width: 4.5vw;
+    height: 3vh;
+    margin-right: 0.5vw;
+    color: #D62196;
+    border: 1px solid #D62196;
+    display: grid;
+    place-content: center;
+    border-radius: 3px;
+    font-size: 1vw;
+    /* border: 1px solid black; */
+}
+a{
+    text-decoration: none;
+    color: #5E5873;
+}

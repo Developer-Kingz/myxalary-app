@@ -1,0 +1,35 @@
+<main class="application">
+
+
+    <a href="#" *ngFor="let offer of offers">
+    <div class="app-list">
+       <div class="app-img-div"><img [src]="offer.imagePath" alt="" class="app-img"></div>
+        <div class="company">
+            <p>{{offer.company}}</p>
+            <h3>{{offer.level}}</h3>
+        </div>
+
+        <div class="country">
+            <div class="my-country">
+                <img src="../../../assets/location.svg" alt="" class="location-img">
+                <p>{{offer.country}}</p>
+            </div>
+            <div class="salary">
+                {{offer.amount}}
+            </div>
+        </div>
+        <div class="tags">
+            <div class="single-tags">Figma</div>
+            <div class="single-tags">Sketch</div>
+            <div class="single-long-tags">Adobe XD</div>
+            <div class="single-long-tags">Illustrator</div>
+            <div class="single-long-tags">Photoshop</div>
+            <div class="single-tags">Invision</div>
+        </div>
+
+        <button class="action-btn">Actions <img src="../../../assets/drop-down.png" alt="" class="action-drop-down"> </button>
+        
+    </div>
+    </a>
+
+</main>

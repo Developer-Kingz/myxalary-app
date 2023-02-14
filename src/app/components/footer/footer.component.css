@@ -1,0 +1,39 @@
+.footer{
+    height: 8vh;
+    display: flex;
+    background-color: #440F7C;
+    color: white;
+    font-size: 1vw;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+.all-right{
+    width: 20vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.privacy-policy{
+    width: 20vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.social-icons{
+    width: 10vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+}
+.instagram-icon{
+    width: 3vw;
+    color: white;
+}
