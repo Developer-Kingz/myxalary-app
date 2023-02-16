@@ -5,6 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './my-profile.component.html',
   styleUrls: ['./my-profile.component.css']
 })
-export class MyProfileComponent {
 
+export class MyProfileComponent {
+  editCreated = false;
+
+  onEdit(){
+    this.editCreated = true;
+  }
+  
 }

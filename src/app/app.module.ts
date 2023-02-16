@@ -16,6 +16,8 @@ import { OffersComponent } from './components/offers/offers.component';
 import { MyJobsComponent } from './components/my-jobs/my-jobs.component';
 import { MyProfileComponent } from './components/my-profile/my-profile.component';
 import { MyHistoryComponent } from './components/my-history/my-history.component';
+import { EditInfoComponent } from './components/edit-info/edit-info.component';
+import { DetailsComponent } from './pages/details/details.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { MyHistoryComponent } from './components/my-history/my-history.component
     OffersComponent,
     MyJobsComponent,
     MyProfileComponent,
-    MyHistoryComponent
+    MyHistoryComponent,
+    EditInfoComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,

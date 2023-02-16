@@ -25,11 +25,13 @@
       </div>
     </div>
 
-    <div class="skills">
+    <div class="skills" (click)="onEdit()">
       <div class="pen">
         <img src="../../../assets/pen.svg" alt="" />
         <span style="color: #d62196">edit</span>
       </div>
+
+      <app-edit-info *ngIf="editCreated"[editCreated]="false"></app-edit-info>
 
       <div class="skill-tag">
         <p>skills</p>

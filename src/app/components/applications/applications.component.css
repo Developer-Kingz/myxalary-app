@@ -86,7 +86,7 @@
     border: 1px solid #D62196;
     place-content: center;
     border-radius: 3px;
-    font-size: 1vw;
+    font-size: 0.8vw;
     /* border: 1px solid black; */
 }
 .single-long-tags{
@@ -98,7 +98,7 @@
     display: grid;
     place-content: center;
     border-radius: 3px;
-    font-size: 1vw;
+    font-size: 0.8vw;
     /* border: 1px solid black; */
 }
 a{

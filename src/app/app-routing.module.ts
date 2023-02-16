@@ -5,6 +5,7 @@ import { MyHistoryComponent } from './components/my-history/my-history.component
 import { MyJobsComponent } from './components/my-jobs/my-jobs.component';
 import { MyProfileComponent } from './components/my-profile/my-profile.component';
 import { OffersComponent } from './components/offers/offers.component';
+import { DetailsComponent } from './pages/details/details.component';
 import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
 import { JobsComponent } from './pages/jobs/jobs.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -20,7 +21,8 @@ const routes: Routes = [
     { path: 'my-jobs', component: MyJobsComponent},
     { path: 'my-profile', component: MyProfileComponent},
     { path: 'my-history', component: MyHistoryComponent},
-  ]}
+  ]},
+  { path: 'jobs/:id', component: DetailsComponent}
 ];
 
 @NgModule({

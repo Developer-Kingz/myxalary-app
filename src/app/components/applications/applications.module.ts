@@ -1,4 +1,5 @@
 export class application{
+    public id: number;
     public company: string;
     public level: string;
     public country: string;
@@ -7,7 +8,8 @@ export class application{
     public time: string;
     public imagePath: string;
 
-    constructor(company: string, level: string, country: string, amount: number, tags: string, time: string, imagePath: string){
+    constructor(id: number, company: string, level: string, country: string, amount: number, tags: string, time: string, imagePath: string){
+        this.id = id;
         this.company = company;
         this.level = level;
         this.country = country;
