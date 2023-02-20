@@ -3,6 +3,7 @@
     width: 95vw;
     margin: auto;
     display: flex;
+    font-family: 'poppins', sans-serif;
     align-items: center;
     justify-content: space-between;
     /* border: 1px solid black; */

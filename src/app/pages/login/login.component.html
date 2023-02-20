@@ -1,19 +1,45 @@
 <main class="sign-up">
-    <div class="sign-up-center">
-        <h1 class="signup-h1">Application Tracker</h1>
-        <p class="signup-h1">Login to access and manage your job applications</p>
-        <br><br>
-        <form action="">
-            <label for="" class="label">Email Address</label><br>
-            <input type="text" class="sign-up-input"><br><br>
+  <div class="sign-up-center">
+    <h1 class="signup-h1">Application Tracker</h1>
+    <p class="signup-h1">Login to access and manage your job applications</p>
+    <br /><br />
 
-            <label for="" class="label">Password</label>
-            <input type="text" class="sign-up-input"><br><br>
-
-            <button class="sign-up-btn">Login</button><br><br>
-            <p class="forgot-password" style="color: #D62196">Forgot Password</p><br>
-            <p class="have-account">Don't have an account? <span style="color: #D62196">Sign Up</span> </p>
-        </form>
+    <div class="error-alert" *ngIf="error">
+      <p>{{ error }}</p>
     </div>
-</main>
+    <div *ngIf="isLoading">
+      <app-loading-spinner></app-loading-spinner>
+    </div>
+    <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" *ngIf="!isLoading">
+      <label for="email" class="label">Email Address</label><br />
+      <input
+        type="email"
+        id="email"
+        class="sign-up-input"
+        ngModel
+        name="email"
+        required
+        email
+      /><br /><br />
 
+      <label for="" class="label">Password</label>
+      <input
+        type="password"
+        id="password"
+        class="sign-up-input"
+        ngModel
+        minlength="6"
+        name="password"
+        required
+        email
+      /><br /><br />
+
+      <button class="sign-up-btn">Login</button><br /><br />
+      <p class="forgot-password" style="color: #d62196" routerLink="/forgot-password">Forgot Password</p>
+      <br />
+      <p class="have-account">
+        Don't have an account? <span style="color: #d62196" routerLink="/" class="forgot-btn">Sign Up</span>
+      </p>
+    </form>
+  </div>
+</main>

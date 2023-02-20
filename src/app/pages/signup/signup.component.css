@@ -1,6 +1,7 @@
 .sign-up{
     height: 100vh;
     display: flex;
+    font-family: 'poppins', sans-serif;
     /* align-items: center; */
     justify-content: center;
     /* border: 1px solid black; */
@@ -8,7 +9,7 @@
 .sign-up-center{
     width: 35vw;
     height: 80vh;
-    margin-top: 20vh;
+    margin-top: 10vh;
     color: #5E5873;
     /* border: 1px solid black; */
 }
@@ -42,4 +43,20 @@
 }
 .have-account{
     margin-left: 9.5vw;
+}
+.error-alert{
+    width: 30vw;
+    height: 10vh;
+    color: red;
+    background-color: rgb(231, 84, 84);
+    /* border: 1px solid black; */
+}
+.help-block{
+    color: #d62196;
+}
+input.ng-invalid.ng-touched{
+    border: 1px solid #d62196;
+}
+.login-btnn{
+    cursor: pointer;
 }

@@ -13,7 +13,7 @@
 
    <div class="search-div">
     <img src="../../../assets/Vector (5).png" alt="" class="search-img">
-    <input type="search" class="search-filter" placeholder="Search">
+    <input type="text" class="search-filter" placeholder="Search" [(ngModel)]="enteredSearchValue" (input)="onSearchTextChanged()">
    </div>
    
    <select name="" id="" class="sort-by">

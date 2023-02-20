@@ -3,11 +3,12 @@
     display: flex;
     /* align-items: center; */
     justify-content: center;
+    font-family: 'poppins', sans-serif;
     /* border: 1px solid black; */
 }
 .sign-up-center{
     width: 35vw;
-    margin-top: 20vh;
+    margin-top: 10vh;
     height: 80vh;
     color: #5E5873;
     /* border: 1px solid black; */
@@ -45,4 +46,15 @@
 }
 .forgot-password{
     margin-left: 13vw;
+    cursor: pointer;
+}
+.error-alert{
+    width: 30vw;
+    height: 10vh;
+    color: red;
+    background-color: rgb(231, 84, 84);
+    /* border: 1px solid black; */
+}
+.forgot-btn{
+    cursor: pointer;
 }

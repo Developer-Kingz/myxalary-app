@@ -10,7 +10,9 @@ export class MyProfileComponent {
   editCreated = false;
 
   onEdit(){
-    this.editCreated = true;
+    this.editCreated = !this.editCreated
   }
-  
+  close(){
+    this.editCreated = false;
+  }
 }

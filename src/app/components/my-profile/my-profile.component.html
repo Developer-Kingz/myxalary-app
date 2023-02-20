@@ -1,3 +1,9 @@
+<div class="my-application">
+  <div class="my-application-left">
+      <p style="color: #5E5873">My Applications</p>
+  </div>
+  <div class="logout"> <img src="../../../assets/My project (2).png" alt="" class="logout-img"> Logout</div>
+</div>
 <main class="profile">
   <div class="my-profile">
     <div class="profile-description">
@@ -25,13 +31,16 @@
       </div>
     </div>
 
-    <div class="skills" (click)="onEdit()">
-      <div class="pen">
-        <img src="../../../assets/pen.svg" alt="" />
-        <span style="color: #d62196">edit</span>
-      </div>
 
-      <app-edit-info *ngIf="editCreated"[editCreated]="false"></app-edit-info>
+    <div class="skills">
+      <div (click)="onEdit()">
+        <div class="pen">
+          <img src="../../../assets/pen.svg" alt="" />
+          <span style="color: #d62196">edit</span>
+        </div>
+      </div>
+      <button class="my-close-btn" *ngIf="editCreated" (click)="close()">Close</button>
+      <app-edit-info *ngIf="editCreated" (onEdit)="onEdit()"></app-edit-info>
 
       <div class="skill-tag">
         <p>skills</p>
@@ -50,7 +59,10 @@
         <button>Adobe Illustrator</button>
         <button>Sketch</button>
       </div>
+
     </div>
+
+      
   </div>
 
   <div class="about">

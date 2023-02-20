@@ -18,6 +18,9 @@ import { MyProfileComponent } from './components/my-profile/my-profile.component
 import { MyHistoryComponent } from './components/my-history/my-history.component';
 import { EditInfoComponent } from './components/edit-info/edit-info.component';
 import { DetailsComponent } from './pages/details/details.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { LoadingSpinnerComponent } from './shared/loading-spiner/loading-spinner.component';
 
 @NgModule({
   declarations: [
@@ -37,10 +40,13 @@ import { DetailsComponent } from './pages/details/details.component';
     MyHistoryComponent,
     EditInfoComponent,
     DetailsComponent,
+    LoadingSpinnerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

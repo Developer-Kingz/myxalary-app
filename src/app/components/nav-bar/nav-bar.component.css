@@ -9,6 +9,7 @@
     display: flex;
     box-shadow: 0 0 3px gray;
     border-radius: 3px;
+    font-family: 'poppins', sans-serif;
     /* position: fixed; */
     background-color: white;
     z-index: 5;

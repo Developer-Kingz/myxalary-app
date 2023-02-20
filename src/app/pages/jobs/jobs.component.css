@@ -1,6 +1,7 @@
 .jobs{
     /* border: 1px solid black; */
-    padding-top: 10vh;
+    padding-top: 5vh;
+    font-family: 'poppins', sans-serif;
 }
 .my-application{
     height: 8vh;

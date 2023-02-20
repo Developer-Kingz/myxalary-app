@@ -1,19 +1,65 @@
 <main class="sign-up">
-    <div class="sign-up-center">
-        <h1 class="signup-h1">Sign Up</h1><br><br>
-        <form action="">
-            <label for="" class="label">Email Address</label><br>
-            <input type="text" class="sign-up-input"><br><br>
+  <div class="sign-up-center">
+    <h1 class="signup-h1">Sign Up</h1>
+    <br /><br />
 
-            <label for="" class="label">Password</label>
-            <input type="text" class="sign-up-input"><br><br>
-
-            <label for="" class="label">Confirm Password</label>
-            <input type="text" class="sign-up-input">
-
-            <button class="sign-up-btn">Sign Up</button><br><br>
-            <p class="have-account">Don't have an account? <span style="color: #D62196">Sign Up</span> </p>
-        </form>
+    <div class="error-alert" *ngIf="error">
+      <p>{{error}}</p>
     </div>
-</main>
+    <div *ngIf="isLoading">
+       <app-loading-spinner></app-loading-spinner>
+    </div>
+    <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" *ngIf="!isLoading">
+      <label for="email" class="label">Email Address</label><br />
+      <input
+        type="email"
+        id="email"
+        class="sign-up-input"
+        ngModel
+        name="email"
+        required
+        email
+        #email="ngModel"
+      />
+      <span class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email!</span>
+      <br /><br />
 
+      <label for="password" class="label">Password</label>
+      <input
+        type="password"
+        id="password"
+        class="sign-up-input"
+        ngModel
+        name="password"
+        minlength="6"
+        required
+        password
+        #password="ngModel"
+      />
+      <span class="help-block" *ngIf="!password.valid && password.touched">Password must contain atleast 6 characters!</span>
+      <br /><br />
+
+      <label for="confirm-password" class="label">Confirm Password</label>
+      <input
+        type="password"
+        id="confirm-password"
+        class="sign-up-input"
+        ngModel
+        name="confirm-password"
+        minlength="6"
+        required
+        confirmPassword
+        #confirmPassword="ngModel"
+      />
+      <span class="help-block" *ngIf="!password.value != confirmPassword.value && confirmPassword.touched">Password does not match!</span>
+
+      <button type="submit" class="sign-up-btn" [disabled]="!authForm.valid">
+        Sign Up</button
+      ><br /><br />
+
+      <p class="have-account">
+        Already have an account? <span class="login-btnn" style="color: #d62196" routerLink="/login">Login</span>
+      </p>
+    </form>
+  </div>
+</main>

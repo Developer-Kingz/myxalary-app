@@ -7,9 +7,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./edit-info.component.css']
 })
 export class EditInfoComponent {
-  @Input() editCreated = false
+  // @Input() editCreated!: boolean;
+  // @Output() editCreated = new EventEmitter<boolean>();
 
-  close(){
-    this.editCreated = false
-  }
+  // close(){
+  //     this.editCreated.emit(false)
+  // }
 }

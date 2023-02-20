@@ -1,8 +1,46 @@
 .application{
     width: 79vw;
     /* height: 135vh; */
-    margin-top: 5vh;
+    margin-top: 15vh;
     /* border: 1px solid black; */
+}
+.application-div{
+    width: 97vw;
+    height: 20vh;
+    position: absolute;
+    padding-top: 1.3vh;
+    right: 1.5vw;
+    top: 10vh;
+    /* border: 1px solid black; */
+}
+.my-application{
+    height: 8vh;
+    width: 95vw;
+    margin: auto;
+    /* margin-bottom: 1vh; */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    /* margin-top: 10vh; */
+    /* border: 1px solid black; */
+}
+.my-application-left{
+    width: 15vw;
+    height: 8vh;
+    /* border: 1px solid black; */
+}
+.logout{
+    width: 6vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    color: #D62196;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+}
+.logout-img{
+    width: 1.5vw;
 }
 .app-list{
     width: 79vw;
@@ -23,8 +61,8 @@
 }
 .company{
     width: 16vw;
-    height: 5vh;
-    font-size: 1vw;
+    height: 4vh;
+    font-size: 0.9vw;
     line-height: 0.3;
     padding-bottom: 1.5vh;
     /* border: 1px solid black; */
@@ -86,7 +124,7 @@
     border: 1px solid #D62196;
     place-content: center;
     border-radius: 3px;
-    font-size: 1vw;
+    font-size: 0.8vw;
     /* border: 1px solid black; */
 }
 .single-long-tags{
@@ -98,7 +136,7 @@
     display: grid;
     place-content: center;
     border-radius: 3px;
-    font-size: 1vw;
+    font-size: 0.8vw;
     /* border: 1px solid black; */
 }
 a{

@@ -2,7 +2,39 @@
     width: 79vw;
     height: 260vh;
     /* border: 1px solid black; */
-    margin-top: 5vh;
+    margin-top: 15vh;
+}
+.my-application{
+    height: 8vh;
+    width: 95vw;
+    margin: auto;
+    margin-bottom: 1.2vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    position: absolute;
+    right: 1.5vw;
+    top: 18vh;
+    /* margin-top: 10vh; */
+    /* border: 1px solid black; */
+}
+.my-application-left{
+    width: 15vw;
+    height: 8vh;
+    /* border: 1px solid black; */
+}
+.logout{
+    width: 6vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    color: #D62196;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+}
+.logout-img{
+    width: 1.5vw;
 }
 .my-profile{
     width: 79vw;
@@ -16,17 +48,18 @@
 .profile-description{
     width: 50%;
     height: 34vh;
-    font-size: 1.2vw;
+    font-size: 1vw;
     color: #5E5873;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     /* border: 1px solid black; */
 }
 .info{
     width: 30%;
-    height: 31vh;
+    height: 30vh;
     text-align: center;
-    padding-top: 3vh;
+    padding-top: 7vh;
     /* padding-left: 2vw; */
     line-height: 0.4;
     /* border: 1px solid black; */
@@ -36,24 +69,31 @@
 }
 .phone{
     width: 13%;
-    height: 34vh;
+    height: 32vh;
+    padding-top: 4vh;
     /* border: 1px solid black; */
 }
 .phone-number{
     width: 47%;
-    height: 34vh;
+    height: 32vh;
+    padding-top: 4vh;
     /* border: 1px solid black; */
 }
 .skills{
     width: 30vw;
     height: 34vh;
+    /* margin-top: 7vh; */
+    margin-left: 5vw;
     cursor: pointer;
     /* border: 1px solid black; */
 }
 .pen{
-    margin-left: 25vw;
+    margin-left: 24vw;
+    /* margin-right: 1vw; */
     margin-top: 2vh;
-    width: 5vw;
+    /* margin-right: 2vw; */
+    width: 4vw;
+    cursor: pointer;
     /* border: 1px solid black; */
 }
 .skill-tag button{
@@ -68,9 +108,10 @@
 .about{
     width: 79vw;
     height: 30vh;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     border-radius: 8px;
     display: grid;
+    line-height: 3vh;
     box-shadow: 0 0 3px gray;
     margin-top: 5vh;
     /* border: 1px solid black; */
@@ -91,7 +132,7 @@
     width: 79vw;
     height: 55vh;
     margin-top: 7vh;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     border-radius: 8px;
     box-shadow: 0 0 3px gray;
     /* border: 1px solid black; */
@@ -146,4 +187,14 @@
     line-height: 1;
     color: #5E5873;
     /* border: 1px solid black; */
+}
+.my-close-btn{
+    position: absolute;
+    top: 7vh;
+    right: 30vw;
+    border: none;
+    z-index: 400;
+    background-color: transparent;
+    cursor: pointer;
+    color: red;
 }
