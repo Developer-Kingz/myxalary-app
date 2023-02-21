@@ -126,6 +126,7 @@
     margin-left: 73vw;
     margin-top: 2vh;
     width: 5vw;
+    cursor: pointer;
     /* border: 1px solid black; */
 }
 .experience{
@@ -180,6 +181,7 @@
     margin-left: 33vw;
     margin-top: 2vh;
     width: 5vw;
+    cursor: pointer;
 }
 .about-div2{
     width: 95%;
@@ -192,6 +194,26 @@
     position: absolute;
     top: 7vh;
     right: 30vw;
+    border: none;
+    z-index: 400;
+    background-color: transparent;
+    cursor: pointer;
+    color: red;
+}
+.close-abtbtn{
+    position: absolute;
+    top: 7vh;
+    right: 10vw;
+    border: none;
+    z-index: 400;
+    background-color: transparent;
+    cursor: pointer;
+    color: red;
+}
+.close-proj{
+    position: absolute;
+    top: 7vh;
+    right: 5vw;
     border: none;
     z-index: 400;
     background-color: transparent;

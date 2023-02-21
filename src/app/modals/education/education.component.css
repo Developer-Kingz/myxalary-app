@@ -1,0 +1,76 @@
+.education{
+    width: 87vw;
+    height: 100vh;
+    /* border: 1px solid black; */
+    position: absolute;
+    border-radius: 4px;
+    top: 10vh;
+    background-color: #fff;
+    box-shadow: 0 0 3px gray;
+    right: 5vw;
+    animation: modal-fade 0.6s ease-in-out;
+    z-index: 200;
+    color: #5E5873;
+}
+@keyframes modal-fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+.modal-backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* z-index: -1; */
+}  
+.education-div{
+    width: 85%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+.education-input{
+    width: 47.5%;
+    height: 5vh;
+    padding-left: 1vw;
+    border: none;
+    box-shadow: 0 0 2px gray;
+    outline: none;
+    border-radius: 4px;
+}
+.education-btns{
+    width: 85%;
+    height: 5vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8vh;
+    /* border: 1px solid black; */
+}
+.education-save{
+    padding: 1vh 1vw;
+    background-color: #440F7C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.education-add{
+    background-color: #F7D3EA;
+    color: #D62196;
+    border: 1px solid #D62196;
+    padding: 1vh 3vw;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.education-head{
+    margin-left: 6.5vw;
+    margin-top: 8vh;
+}

@@ -1,0 +1,85 @@
+.projects{
+    width: 87vw;
+    height: 120vh;
+    /* border: 1px solid black; */
+    position: absolute;
+    border-radius: 4px;
+    top: 10vh;
+    background-color: #fff;
+    box-shadow: 0 0 3px gray;
+    right: 5vw;
+    animation: modal-fade 0.6s ease-in-out;
+    z-index: 200;
+    color: #5E5873;
+}
+@keyframes modal-fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+.modal-backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* z-index: -1; */
+}  
+.project-input-field{
+    width: 83%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+.projects-head{
+    margin-left: 7.5vw;
+    margin-top: 6vh;
+}
+.project-input-main{
+    width: 47.5%;
+    height: 4.5vh;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 0 2px rgb(123, 122, 122);
+    padding-left: 1vw;
+    outline: none;
+}
+.project-text-area{
+    width: 83%;
+    height: 30vh;
+    margin: auto;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 2px rgb(123, 122, 122);
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.project-area{
+    width: 98%;
+    height: 28vh;
+    border: none;
+    outline: none;
+}
+.project-btn{
+    background-color: #440F7C;
+    color: white;
+    border: none;
+    padding: 1vh 1vw;
+    border-radius: 5px;
+    margin-left: 7.5vw;
+    margin-top: 6vh;
+    cursor: pointer;
+}
+.project-add{
+    background-color: #F7D3EA;
+    color: #D62196;
+    padding: 1vh 3vw;
+    border-radius: 5px;
+    border: none;
+    margin-left: 72vw;
+    border: 1px solid #D62196;
+}

@@ -42,6 +42,25 @@
       <button class="my-close-btn" *ngIf="editCreated" (click)="close()">Close</button>
       <app-edit-info *ngIf="editCreated" (onEdit)="onEdit()"></app-edit-info>
 
+      <button class="close-abtbtn" *ngIf="aboutCreated" (click)="closeAbt()">Close</button>
+      <app-about *ngIf="aboutCreated" (onAbout)="onAbout()"></app-about>
+
+      <button class="close-abtbtn" *ngIf="experienceCreated" (click)="closeExperience()">Close</button>
+      <app-experience *ngIf="experienceCreated" (onExperience)="onExperience()"></app-experience>
+
+      <button class="close-proj" *ngIf="projectsCreated" (click)="closeProjects()">Close</button>
+      <app-projects *ngIf="projectsCreated" (onProjects)="onProjects()"></app-projects>
+
+      <button class="close-proj" *ngIf="educationCreated" (click)="closeEducation()">Close</button>
+      <app-education *ngIf="educationCreated" (onEducation)="onEducation()"></app-education>
+
+      <button class="close-proj" *ngIf="documentCreated" (click)="closeDocument()">Close</button>
+      <app-documents *ngIf="documentCreated" (onDocuments)="onDocuments()"></app-documents>
+      <!-- <app-documents (onDocuments)="onDocuments()"></app-documents> -->
+      
+      
+      
+
       <div class="skill-tag">
         <p>skills</p>
         <button>Illustrator</button>
@@ -66,7 +85,7 @@
   </div>
 
   <div class="about">
-    <div class="pen2">
+    <div class="pen2" (click)="onAbout()">
       <img src="../../../assets/pen.svg" alt="" />
       <span style="color: #d62196">edit</span>
     </div>
@@ -90,7 +109,7 @@
     </div>
 
     <div class="experience">
-      <div class="pen2">
+      <div class="pen2" (click)="onExperience()">
         <img src="../../../assets/pen.svg" alt="" />
         <span style="color: #d62196">edit</span>
       </div>
@@ -114,7 +133,7 @@
     </div>
 
     <div class="project">
-      <div class="pen2">
+      <div class="pen2" (click)="onProjects()">
         <img src="../../../assets/pen.svg" alt="" />
         <span style="color: #d62196">edit</span>
       </div>
@@ -143,7 +162,7 @@
 
     <div class="education">
       <div class="edu-info">
-        <div class="pen3">
+        <div class="pen3" (click)="onEducation()">
           <img src="../../../assets/pen.svg" alt="" />
           <span style="color: #d62196">edit</span>
         </div>
@@ -163,7 +182,7 @@
 
       
       <div class="document">
-        <div class="pen3">
+        <div class="pen3" (click)="onDocuments()">
           <img src="../../../assets/pen.svg" alt="" />
           <span style="color: #d62196">edit</span>
         </div>

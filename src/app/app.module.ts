@@ -21,6 +21,11 @@ import { DetailsComponent } from './pages/details/details.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LoadingSpinnerComponent } from './shared/loading-spiner/loading-spinner.component';
+import { AboutComponent } from './modals/about/about.component';
+import { ExperienceComponent } from './modals/experience/experience.component';
+import { ProjectsComponent } from './modals/projects/projects.component';
+import { EducationComponent } from './modals/education/education.component';
+import { DocumentsComponent } from './modals/documents/documents.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +45,12 @@ import { LoadingSpinnerComponent } from './shared/loading-spiner/loading-spinner
     MyHistoryComponent,
     EditInfoComponent,
     DetailsComponent,
-    LoadingSpinnerComponent
+    LoadingSpinnerComponent,
+    AboutComponent,
+    ExperienceComponent,
+    ProjectsComponent,
+    EducationComponent,
+    DocumentsComponent
   ],
   imports: [
     BrowserModule,

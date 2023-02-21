@@ -1,0 +1,95 @@
+.experience{
+    width: 90vw;
+    height: 200vh;
+    position: absolute;
+    border-radius: 4px;
+    top: 10vh;
+    background-color: #fff;
+    box-shadow: 0 0 3px gray;
+    right: 5vw;
+    animation: modal-fade 0.6s ease-in-out;
+    z-index: 200;
+    color: #5E5873;
+    /* border: 1px solid black; */
+}
+@keyframes modal-fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+.modal-backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* z-index: -1; */
+}  
+.experience-header{
+    margin-left: 4.8vw;
+    margin-top: 6vh;
+}
+.experience-center{
+    width: 90%;
+    height: 35%;
+    margin: auto;
+    /* margin-top: 6vh; */
+    border-radius: 6px;
+    border: 1px solid rgb(220, 216, 216);
+    /* border: 1px solid black; */
+}
+.input-container{
+    width: 100%;
+    height: 15vh;
+    /* margin-bottom: 6vh; */
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+}
+.left-input{
+    width: 47%;
+    height: 20vh;
+    /* border: 1px solid black; */
+}
+.right-input{
+    width: 47%;
+    height: 20vh;
+    /* border: 1px solid black; */
+}
+.experience-input{
+    width: 97%;
+    height: 4.5vh;
+    border-radius: 3px;
+    margin-top: 2vh;
+    padding-left: 1vw;
+    border: none;
+    box-shadow: 0 0 3px gray;
+}
+.experience-area{
+    width: 98%;
+    height: 45vh;
+    margin: auto;
+    box-shadow: 0 0 3px gray;
+    border-radius: 3px;
+    /* border: 1px solid black; */
+}
+.experience-txt{
+    width: 98%;
+    height: 41vh;
+    margin-left: 0.5vw;
+    /* margin-top: 2vh; */
+    outline: none;
+    border: none;
+}
+.desc{
+    margin-left: 1.5vw;
+}
+.save-edit{
+    background-color: #440F7C;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 1vh 1vw;
+    margin-top: 10vh;
+    margin-left: 4.8vw;
+}
