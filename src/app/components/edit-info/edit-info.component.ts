@@ -1,5 +1,5 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-// import {editCreated} from '../my-profile/my-profile.component'
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-edit-info',
@@ -7,10 +7,11 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./edit-info.component.css']
 })
 export class EditInfoComponent {
-  // @Input() editCreated!: boolean;
-  // @Output() editCreated = new EventEmitter<boolean>();
+  // editForm: FormGroup;
 
-  // close(){
-  //     this.editCreated.emit(false)
+  // ngOnInit() {
+  //   this.editForm = new FormGroup({
+  //     fullname: new FormControl()
+  //   });
   // }
 }

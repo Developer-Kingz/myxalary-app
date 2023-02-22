@@ -59,10 +59,12 @@ export class ApplicationsComponent implements OnInit{
 
     }
 
-    searchText: string = ''
+    searchText: string = '';
 
-    onSearchTextEntered(searchValue: any){
-      console.log(this.searchText);
-       this.searchText = searchValue;
+    onSearchTextEntered(searchValue: Event){
+      //  this.searchText = searchValue;
+      //  console.log(this.searchText);
+      const value = (searchValue.target as HTMLInputElement).value;
+      console.log(value);
     }
 }

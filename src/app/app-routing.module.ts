@@ -10,11 +10,17 @@ import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password
 import { JobsComponent } from './pages/jobs/jobs.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { AccountCreatedComponent } from './pages/account-created/account-created.component';
+import { PasswordResetComponent } from './pages/password-reset/password-reset.component';
+import { NewPasswordComponent } from './pages/new-password/new-password.component';
 
 const routes: Routes = [
   { path: '', component: SignupComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'account-created', component: AccountCreatedComponent},
   { path: 'forgot-password', component: ForgotPasswordComponent},
+  { path: 'password-reset', component: PasswordResetComponent},
+  { path: 'new-password', component: NewPasswordComponent},
   { path: 'jobs', component: JobsComponent, children: [
     { path: 'applications', component: ApplicationsComponent },
     { path: 'offers', component: OffersComponent},

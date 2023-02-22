@@ -1,0 +1,32 @@
+.account{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins', sans-serif;
+    color: #5E5873;
+    /* border: 1px solid black; */
+}
+.account-middle{
+    width: 30vw;
+    height: 70vh;
+    /* margin-right: 5vw; */
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.circle-good{
+    margin-top: 8vh;
+}
+.good{
+    position: absolute;
+    top: 50vh;
+    left: 47vw;
+}
+.return{
+    background-color: #440F7C;
+    padding: 0.5vh 4vw;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

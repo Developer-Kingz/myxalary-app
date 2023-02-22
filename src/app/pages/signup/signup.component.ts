@@ -34,7 +34,7 @@ export class SignupComponent {
       this.error = errorMessage
       this.isLoading = false
     });
-    this.router.navigate(['/login']);
+    this.router.navigate(['/account-created']);
   }
 }
 

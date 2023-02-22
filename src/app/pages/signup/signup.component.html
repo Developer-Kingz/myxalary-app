@@ -10,7 +10,7 @@
        <app-loading-spinner></app-loading-spinner>
     </div>
     <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" *ngIf="!isLoading">
-      <label for="email" class="label">Email Address</label><br />
+      <label for="email" class="label">Email Address <span style="color: red">*</span></label><br />
       <input
         type="email"
         id="email"
@@ -24,7 +24,7 @@
       <span class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email!</span>
       <br /><br />
 
-      <label for="password" class="label">Password</label>
+      <label for="password" class="label">Password <span style="color: red">*</span></label>
       <input
         type="password"
         id="password"
@@ -39,7 +39,7 @@
       <span class="help-block" *ngIf="!password.valid && password.touched">Password must contain atleast 6 characters!</span>
       <br /><br />
 
-      <label for="confirm-password" class="label">Confirm Password</label>
+      <label for="confirm-password" class="label">Confirm Password <span style="color: red">*</span></label>
       <input
         type="password"
         id="confirm-password"

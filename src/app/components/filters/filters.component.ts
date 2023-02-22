@@ -12,6 +12,8 @@ export class FiltersComponent {
   searchTextChange: EventEmitter<string> = new EventEmitter<string>();
 
   onSearchTextChanged(){
-    this.searchTextChange.emit(this.enteredSearchValue)
+    this.searchTextChange.emit(this.enteredSearchValue);
+    // console.log(this.enteredSearchValue);
+    
   }
 }

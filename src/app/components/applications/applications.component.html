@@ -10,7 +10,7 @@
 <main class="application">
 
     <a href="#" *ngFor="let application of applications">
-    <div class="app-list">
+    <div class="app-list" *ngIf="searchText === '' || application.company.toLowerCase().includes(searchText)">
        <div class="app-img-div"><img [src]="application.imagePath" alt="" class="app-img"></div>
         <div class="company">
             <p>{{application.company}}</p>
