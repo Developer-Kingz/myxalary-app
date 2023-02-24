@@ -5,40 +5,46 @@
         </div>
         <div class="logout"> <img src="../../../assets/My project (2).png" alt="" class="logout-img"> Logout</div>
     </div>
-    <app-filters (searchTextChanged)="onSearchTextEntered($event)"></app-filters>
+    <app-filters (searchTextChange)="onSearchTextEntered($event)" (OptionChanged)="onFilterOptionChanged($event)" (NumberChanged)="onFilterNumberChanged($event)"></app-filters>
 </div>
 <main class="application">
 
-    <a href="#" *ngFor="let application of applications">
-    <div class="app-list" *ngIf="searchText === '' || application.company.toLowerCase().includes(searchText)">
-       <div class="app-img-div"><img [src]="application.imagePath" alt="" class="app-img"></div>
-        <div class="company">
-            <p>{{application.company}}</p>
-            <h3>{{application.level}}</h3>
-        </div>
+    <a [routerLink]="['/jobs/applications', application.id]" *ngFor="let application of applications">
 
-        <div class="country">
-            <div class="my-country">
-                <img src="../../../assets/location.svg" alt="" class="location-img">
-                <p>{{application.country}}</p>
-            </div>
-            <div class="salary">
-                {{application.amount}}
-            </div>
-        </div>
-        <div class="tags">
-            <div class="single-tags">Figma</div>
-            <div class="single-tags">Sketch</div>
-            <div class="single-long-tags">Adobe XD</div>
-            <div class="single-long-tags">Illustrator</div>
-            <div class="single-long-tags">Photoshop</div>
-            <div class="single-tags">Invision</div>
-        </div>
-        <div class="time">
-            {{application.time}}
-        </div>
-        
-    </div>
+    <ng-container *ngIf="(numberButton === 30 || numberButton === 20 || numberButton === 10 || numberButton === 5) && applications.slice(0, numberButton)">
+        <ng-container *ngIf="optionButton === 'All' || optionButton === application.level">
+            <div class="app-list" *ngIf="searchText === '' || application.company.toLowerCase().includes(searchText)">
+                <div class="app-img-div"><img [src]="application.imagePath" alt="" class="app-img"></div>
+                 <div class="company">
+                     <p>{{application.company}}</p>
+                     <h3>{{application.level}}</h3>
+                 </div>
+         
+                 <div class="country">
+                     <div class="my-country">
+                         <img src="../../../assets/location.svg" alt="" class="location-img">
+                         <p>{{application.country}}</p>
+                     </div>
+                     <div class="salary">
+                         {{application.amount}}
+                     </div>
+                 </div>
+                 <div class="tags">
+                     <div class="single-tags">Figma</div>
+                     <div class="single-tags">Sketch</div>
+                     <div class="single-long-tags">Adobe XD</div>
+                     <div class="single-long-tags">Illustrator</div>
+                     <div class="single-long-tags">Photoshop</div>
+                     <div class="single-tags">Invision</div>
+                 </div>
+                 <div class="time">
+                     {{application.time}}
+                 </div>
+                 
+             </div>
+        </ng-container>
+    </ng-container>
+    
     </a>
 
 </main>

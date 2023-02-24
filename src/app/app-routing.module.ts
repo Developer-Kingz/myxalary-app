@@ -23,12 +23,12 @@ const routes: Routes = [
   { path: 'new-password', component: NewPasswordComponent},
   { path: 'jobs', component: JobsComponent, children: [
     { path: 'applications', component: ApplicationsComponent },
+    { path: 'applications/:id', component: DetailsComponent },
     { path: 'offers', component: OffersComponent},
     { path: 'my-jobs', component: MyJobsComponent},
     { path: 'my-profile', component: MyProfileComponent},
     { path: 'my-history', component: MyHistoryComponent},
   ]},
-  { path: 'jobs/:id', component: DetailsComponent}
 ];
 
 @NgModule({

@@ -78,3 +78,8 @@
     background-color: transparent;
     cursor: pointer;
 }
+.edit-valid-email{
+    color: #d62196;
+    font-size: 0.8vw;
+    margin-left: 5vw;
+}
